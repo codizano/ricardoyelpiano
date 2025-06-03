@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Fredoka } from "next/font/google";
+import { Fredoka } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
 const fredoka = Fredoka({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
