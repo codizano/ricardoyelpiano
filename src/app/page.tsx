@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Navbar from '@/components/Navbar'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#f8f9fa] to-white text-[#2c3e50] font-sans">
+      <Navbar />
       {/* Hero Section - Con gradiente suave, sin márgenes laterales */}
-      <section className="bg-[linear-gradient(90deg,_#fdf6ee_0%,_#f3fdfa_100%)] w-full py-20">
+      <section className="bg-[linear-gradient(90deg,_#fdf6ee_0%,_#f3fdfa_100%)] w-full py-20 mt-16">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[#2c3e50]">
@@ -45,7 +47,7 @@ export default function Home() {
       </section>
 
       {/* Beneficios Section - Sin gradiente */}
-      <section className="bg-white container mx-auto px-4 py-20">
+      <section id="beneficios" className="bg-white container mx-auto px-4 py-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#2c3e50]">¿Por qué elegir mis clases?</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-[linear-gradient(90deg,_#fdf6ee_0%,_#f3fdfa_100%)] p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-4 md:border-2 border-[#ffb088] hover:border-6 md:hover:border-4">
@@ -100,7 +102,7 @@ export default function Home() {
       </section>
 
       {/* Niveles Section - Con gradiente suave, sin márgenes laterales */}
-      <section className="bg-[linear-gradient(90deg,_#fdf6ee_0%,_#f3fdfa_100%)] w-full py-20">
+      <section id="niveles" className="bg-[linear-gradient(90deg,_#fdf6ee_0%,_#f3fdfa_100%)] w-full py-20">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#2c3e50]">¿Que enseño en mis clases?</h2>
           <div className="grid md:grid-cols-2 gap-8">
